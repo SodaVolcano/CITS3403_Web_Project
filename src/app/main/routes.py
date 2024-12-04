@@ -143,13 +143,13 @@ def init_conversation():
             }
         )
     except KeyError:
-            return jsonify(
-                {
-                    "status": "FAILED",
-                    "conversation_id": -1,
-                    "error": "Chatbot not initialiazed",
-                }
-            )
+        return jsonify(
+            {
+                "status": "FAILED",
+                "conversation_id": -1,
+                "error": "Chatbot not initialiazed",
+            }
+        )
 
 
 @main.route("/init_chatbot", methods=["POST"])
